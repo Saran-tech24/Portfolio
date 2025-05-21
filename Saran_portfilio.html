@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Header</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Header Section -->
+    <header class="sticky top-0 bg-gray-800 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            
+            <!-- Logo -->
+            <a href="#" class="text-xl font-bold text-teal-400">B SARAN</a>
+
+            <!-- Navigation -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="hover:text-teal-300">Home</a>
+                <a href="#about" class="hover:text-teal-300">About</a>
+                <a href="#Skills" class="hover:text-teal-300">Skills</a>
+                <a href="#projects" class="hover:text-teal-300">Projects</a>
+                <a href="#contact" class="hover:text-teal-300">Contact</a>
+            </nav>
+
+            <!-- Dark Mode Toggle -->
+            <button id="darkModeToggle" class="p-2 bg-gray-700 rounded-full">
+                🌙
+            </button>
+
+        </div>
+    </header>
+
+    <script>
+        // Dark Mode Toggle
+        const toggleButton = document.getElementById('darkModeToggle');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('bg-gray-100');
+            document.body.classList.toggle('text-gray-900');
+            document.body.classList.toggle('bg-gray-900');
+            document.body.classList.toggle('text-white');
+        });
+    </script>
+
+</body>
+</html>
+
+<!-- About Me Section -->
+<section id="about" class="bg-gray-900 text-white py-16 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+        
+        <!-- Profile Image -->
+        <div class="w-48 h-48 mx-auto mb-6">
+            <img src="C:\Users\Admin\Downloads\saran.jpg" alt="Your Photo" class="w-full h-full object-cover rounded-full border-4 border-teal-400 shadow-lg">
+        </div>
+
+        <h2 class="text-4xl font-bold text-teal-400 mb-4">About Me</h2>
+        
+        <p class="text-lg text-gray-300 leading-relaxed">
+            I am a passionate <span class="text-teal-400 font-semibold">Data Analyst</span> with expertise in MYSQL, Power BI, Excel, and Python.  
+            I love transforming raw data into actionable insights that drive business growth.
+        </p>
+        
+        <div class="mt-6 flex justify-center">
+            <a href="#projects" class="px-6 py-3 bg-teal-500 text-white font-semibold rounded-lg hover:bg-teal-400 transition">
+                View My Work
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- Skills & Tools Section -->
+<section id="skills" class="bg-gray-900 text-white py-16 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+        <h2 class="text-4xl font-bold text-teal-400 mb-6">Skills & Tools</h2>
+        <p class="text-lg text-gray-300 mb-8">
+            I specialize in **Data Analysis, Business Intelligence, and Visualization**, leveraging modern tools and technologies.
+        </p>
+
+        <!-- Skills Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                <p class="text-xl font-semibold text-teal-300">MYSQL</p>
+                <p class="text-sm text-gray-400">Database Queries & Optimization</p>
+            </div>
+
+            <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                <p class="text-xl font-semibold text-teal-300">Python</p>
+                <p class="text-sm text-gray-400">Pandas, NumPy, Matplotlib</p>
+            </div>
+
+            <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                <p class="text-xl font-semibold text-teal-300">Power BI</p>
+                <p class="text-sm text-gray-400">Dashboard & Report Building</p>
+            </div>
+
+            <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                <p class="text-xl font-semibold text-teal-300">Excel</p>
+                <p class="text-sm text-gray-400">Data Cleaning & Pivot Tables</p>
+            </div>
+
+            <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                <p class="text-xl font-semibold text-teal-300">Streamlit</p>
+                <p class="text-sm text-gray-400">Interactive Data Apps</p>
+            </div>
+
+            <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                <p class="text-xl font-semibold text-teal-300">AWS</p>
+                <p class="text-sm text-gray-400">Cloud Storage & Deployment</p>
+            </div>
+
+            <div class="bg-gray-800 p-4 rounded-lg shadow-lg">
+                <p class="text-xl font-semibold text-teal-300">Jira</p>
+                <p class="text-sm text-gray-400">Project Management & Agile</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="bg-gray-900 text-white py-16 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+        <h2 class="text-4xl font-bold text-teal-400 mb-6">Projects</h2>
+        <p class="text-lg text-gray-300 mb-8">
+            Here are some of my **data analytics and visualization projects**, showcasing my skills in SQL, Power BI, Python, and Machine Learning.
+        </p>
+
+        <!-- Projects Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Project 1: Illuminating Insights for Global Electronics -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform">
+                <h3 class="text-2xl font-semibold text-teal-300">Illuminating Insights for Global Electronics</h3>
+                <p class="text-gray-400 text-sm mt-2">MySQL | Pandas | Power BI</p>
+                <p class="mt-4 text-gray-300 text-sm">
+                    Analyzed sales performance, optimized SQL queries for customer insights, and created Power BI dashboards for trend visualization, leading to a 100% business growth increase.
+                </p>
+                <a href="https://github.com/Saran-tech24/DataSpark-Illuminating-Insights-for-Global-Electronics" target="_blank" class="text-teal-400 mt-4 inline-block hover:underline">View Project</a>
+            </div>
+
+            <!-- Project 2: Used Car Price Prediction -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform">
+                <h3 class="text-2xl font-semibold text-teal-300">Used Car <br> Prediction</h3>
+                <p class="text-gray-400 text-sm mt-2">Data Cleaning | Machine Learning | Streamlit</p>
+                <p class="mt-4 text-gray-300 text-sm">
+                    Developed an interactive Streamlit app for car price predictions, achieving a 93% R-squared score with machine learning techniques and statistical evaluation.
+                </p>
+                <a href="https://github.com/Saran-tech24/Used-Car-Price-Prediction" target="_blank" class="text-teal-400 mt-4 inline-block hover:underline">View Project</a>
+            </div>
+
+            <!-- Project 4: Customer Segmentation -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform">
+                <h3 class="text-2xl font-semibold text-teal-300">A Multimodal Application</h3>
+                <p class="text-gray-400 text-sm mt-2">Python | NLP | Deep learning | GenAI</p>
+                <p class="mt-4 text-gray-300 text-sm">
+                    Developed TransArt, an AI-powered web app for Tamil-to-English translation, text-to-image synthesis, and creative text generation, deployed on Hugging Face Spaces.
+                </p>
+                <a href="https://github.com/Saran-tech24/A-Multimodal-Application" target="_blank" class="text-teal-400 mt-4 inline-block hover:underline">View Project</a>
+            </div>
+
+            <!-- Project 5: Web Scraping & Analysis -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform">
+                <h3 class="text-2xl font-semibold text-teal-300">Redbus-Data-Scraping-with-Selenium-Dynamic-Filtering-using-Streamlit</h3>
+                <p class="text-gray-400 text-sm mt-2">Python | Streamlit | SQL</p>
+                <p class="mt-4 text-gray-300 text-sm">
+                    Developed a web scraping tool to extract real-time pricing data from e-commerce sites for competitive analysis.
+                </p>
+                <a href="https://github.com/Saran-tech24/Redbus-Data-Scraping-with-Selenium-Dynamic-Filtering-using-Streamlit" target="_blank" class="text-teal-400 mt-4 inline-block hover:underline">View Project</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="bg-gray-900 text-white py-16 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl font-bold text-teal-400 mb-6">Get in Touch</h2>
+        <p class="text-lg text-gray-300 mb-8">
+            Feel free to reach out for collaborations, job opportunities, or just to say hi! 🚀
+        </p>
+
+        <!-- Contact Form -->
+        <form action="https://api.web3forms.com/submit" method="POST" class="bg-gray-800 p-6 rounded-lg shadow-lg max-w-2xl mx-auto">
+            <input type="hidden" name="access_key" value="07618a54-6b06-4f93-8a61-1db889e5ca8a">
+            <input type="hidden" name="_next" value="https://yourportfolio.com/thank-you.html">
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="mb-4">
+                <label class="block text-gray-300 text-sm mb-2" for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" class="w-full p-3 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-teal-400" required>
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-gray-300 text-sm mb-2" for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" class="w-full p-3 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-teal-400" required>
+            </div>
+
+            <div class="mb-4">
+                <label class="block text-gray-300 text-sm mb-2" for="message">Your Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Type your message here" class="w-full p-3 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-teal-400" required></textarea>
+            </div>
+
+            <button type="submit" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300">
+                Send Message
+            </button>
+        </form>
+
+        <!-- Social Links -->
+        <div class="mt-8 flex justify-center space-x-6">
+            <a href="https://linkedin.com/in/YOUR_PROFILE" class="text-teal-400 hover:text-teal-300 text-2xl">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/YOUR_GITHUB" class="text-teal-400 hover:text-teal-300 text-2xl">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:YOUR_EMAIL@gmail.com" class="text-teal-400 hover:text-teal-300 text-2xl">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer Section -->
+<footer class="bg-gray-900 text-gray-300 py-8">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+        
+        <!-- Footer Logo & Contact Info -->
+        <div class="text-center md:text-left">
+            <h2 class="text-2xl font-bold text-teal-400">B SARAN</h2>
+            <p class="text-sm">Data Analytics | Visualization | SQL | Power BI</p>
+            <p class="text-sm">📧 saranbalan8@gmail.com</p>
+            <p class="text-xs mt-2">&copy; 2024 All Rights Reserved.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <nav class="flex flex-wrap justify-center md:justify-start space-x-6 text-sm">
+            <a href="#about" class="hover:text-teal-400 transition duration-300">About</a>
+            <a href="#skills" class="hover:text-teal-400 transition duration-300">Skills</a>
+            <a href="#projects" class="hover:text-teal-400 transition duration-300">Projects</a>
+            <a href="#contact" class="hover:text-teal-400 transition duration-300">Contact</a>
+        </nav>
+
+        <!-- Social Media Links -->
+        <div class="flex space-x-6">
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-teal-400 hover:text-teal-300 text-2xl transition duration-300" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/yourgithub" target="_blank" class="text-teal-400 hover:text-teal-300 text-2xl transition duration-300" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:saranbalan8@gmail.com" class="text-teal-400 hover:text-teal-300 text-2xl transition duration-300" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+
+    </div>
+</footer>
+
+<!-- FontAwesome Icons (Ensure this is in your <head> or before closing </body>) -->
+<script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
